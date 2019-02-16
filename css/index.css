@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#bg{
+    height: 32px;
+    background: #f2f2f2;
+    color: #999999;
+    border-bottom: 0.1px solid #e5e5e5;
+}
+#bg a{
+    text-decoration: none;
+    color: #999999;
+    height: 32px;
+    padding: 0 5px;
+    display:inline-block;
+}
+#bg li{
+    list-style: none;
+    font-size: 12px;
+    line-height: 30px;
+    margin-right: 10px;
+    border-left: 0.1px transparent solid;
+    border-right: 0.1px transparent solid;
+
+}
+#left >li{
+    float:left;
+}
+#right >li{
+    float:right;
+}
+#bg>li:hover{
+    color:#ff0036;
+}
+#bg .menu .white:hover{
+    background: #fff;
+    text-decoration: underline;
+    border-left-color:#cccccc;
+    border-right-color:#cccccc;
+}
+#bg .menu li>a:hover{
+    color:#ff0036;
+}
+#bg .submenu{
+    display: none;
+    background: #fff;
+    position:absolute;
+}
+#bg .menu li:hover>.submenu{
+    display: block;
+    border-left:#cccccc 1px solid;
+    border-right:#cccccc 1px solid;
+    border-bottom:#cccccc 1px solid;
+}
+.line{
+    border: 0.5px;
+    border-style: solid;
+    border-color:#cccccc;
+}
+.mytri{
+    width: 0;
+    height: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-top-color:#bbb;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    margin-left: 3px;
+    display: inline-block;
+}
+.dashed-line{
+    border: 0.5px;
+    border-style: dashed;
+    border-color: #cccccc;
+}
+.pic{
+}
+.wrapper{
+    width: 1230px;
+    height: 100%;
+    margin:0 auto;
+}
+.iconfont{
+    color: #ff0036;
+    font-size: 10px;
+}
+
+#toolbar{
+    background: #000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 32px;
+
+}
