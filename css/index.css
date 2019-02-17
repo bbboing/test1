@@ -82,7 +82,7 @@
     height: 100%;
     margin:0 auto;
 }
-.iconfont{
+#bg .topmenu-logo{
     color: #ff0036;
     font-size: 10px;
 }
@@ -93,6 +93,31 @@
     top: 0;
     bottom: 0;
     right: 0;
-    width: 32px;
-
+    width: 35px;
+}
+#toolbar .toolbar-logo{
+    font-size: 24px;
+    color: #fff;
+}
+#tm-logo{
+    margin-top: 126.5px;
+    text-align: center;
+}
+#toolbar .toolbar-item{
+    margin: 10px;
+    color: #fff;
+    width: 25px;
+    font-size: 12px;
+    text-align: center;
+}
+#toolbar .vertical{
+    width: 20px;
+    line-height: 16px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin:0 auto
+}
+#toolbar #cart{
+    border-top: 1px #444 solid;
+    border-bottom: 1px #444 solid;
 }
