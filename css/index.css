@@ -35,9 +35,16 @@
 }
 #bg .menu .white:hover{
     background: #fff;
-    text-decoration: underline;
     border-left-color:#cccccc;
     border-right-color:#cccccc;
+}
+#bg .menu .white:hover .mytri{
+    transform: rotate(180deg);
+    transform-origin: 3px 1.5px;
+    transition: transform .3s linear;
+}
+#bg .menu .white a:hover{
+    text-decoration: underline;
 }
 #bg .menu li>a:hover{
     color:#ff0036;
@@ -96,7 +103,7 @@
     width: 35px;
 }
 #toolbar .toolbar-logo{
-    font-size: 24px;
+    font-size: 25px;
     color: #fff;
 }
 #tm-logo{
@@ -120,4 +127,11 @@
 #toolbar #cart{
     border-top: 1px #444 solid;
     border-bottom: 1px #444 solid;
+}
+#toolbar .toolbar-item:hover{
+    background-color: #fe0c3f;
+}
+#toolbar .toolbar-bottom-logo{
+    position: absolute;
+    bottom: 0;
 }
