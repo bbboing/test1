@@ -3,6 +3,25 @@
     margin: 0;
     padding: 0;
 }
+.wrapper {
+     width: 1230px;
+     height: 100%;
+     margin: 0 auto;
+ }
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html{
+    overflow-y: visible;
+}
 #bg{
     height: 32px;
     background: #f2f2f2;
@@ -54,6 +73,7 @@
     display: none;
     background: #fff;
     position:absolute;
+    z-index: 1;
 }
 #bg .menu li:hover>.submenu{
     display: block;
@@ -75,6 +95,7 @@
     -moz-box-shadow: 0 0 5px #aaa;
     box-shadow: 0 0 5px #aaa;
     display: none;
+    z-index: 1;
 }
 #bg .qr-code::after{
     content: '';
@@ -89,6 +110,36 @@
 }
 #bg .phone:hover .qr-code{
     display: block;
+}
+#bg .map {
+    padding: 0 25px;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    position: absolute;
+    display: none;
+}
+#bg .map>div{
+    float: right;
+}
+#bg .map>li{
+    display: inline;
+}
+#hot{
+    width: 455px;
+    height: 110px;
+    padding-left: 30px;
+}
+#market{
+    width: 455px;
+    height: 110px;
+    padding-left: 30px;
+    border-width: 0 1px;
+}
+#help{
+    width: 196px;
+    height: 110px;
+    padding-left: 30px;
 }
 .line{
     border: 0.5px;
@@ -132,13 +183,20 @@
     width: 35px;
 }
 #toolbar .toolbar-logo{
-    font-size: 25px;
     color: #fff;
+    width: 35px;
+    height: 35px;
+    text-align: center;
 }
 #tm-logo{
     margin-top: 126.5px;
-    text-align: center;
     position: relative;
+}
+.icon-pinpaibiaoshi-tianmao{
+    font-size: 25px;
+}
+.toolbar-logo:hover{
+    background: #ff0036;
 }
 #toolbar .vip{
     width: 90px;
@@ -151,8 +209,8 @@
     top: -2px;
     background: #444444;
     color: #fff;
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
     transition: all .3s ease;
 }
 #tm-logo:hover .vip{
@@ -196,3 +254,137 @@
     bottom: 0;
 }
 /*toolbar结束*/
+
+/*logo-search 开始*/
+#logo-search .wrapper{
+    position: relative;
+}
+#logo-search .search{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#logo-search .logo,.search{
+    float: left;
+}
+#logo-search .search-form{
+    width: 623px;
+    height: 36px;
+    border: 2px solid #ff0036;
+}
+#logo-search .search-text{
+    width: 483px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-indent: 10px;
+}
+#logo-search .search-button{
+    width: 132px;
+    height: 100%;
+    background: #ff0036;
+    color: #fff;
+    border: 0;
+    float: right;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+#logo-search .hot-query{
+    height: 24px;
+    margin-top: 5px;
+}
+#logo-search .hot-query li{
+    float: left;
+    padding: 0 12px;
+    border-right: #999 solid 1px;
+}
+#logo-search .hot-query a{
+    font-size: 15px;
+    color: #999;
+}
+#logo-search .hot-query li:first-child{
+    padding-left: 0;
+}
+#logo-search .hot-query li:last-child{
+    border:none;
+}
+#logo-search .hot-highlight a{
+    color: #ff0036;
+}
+/*logo-search 结束*/
+
+/*main-nav 开始*/
+#main-nav{
+    height: 30px;
+    line-height: 30px;
+}
+#main-nav .wrapper{
+    margin-left: 245px;
+}
+#main-nav li{
+    float: left;
+    padding: 0 8px;
+}
+#main-nav .nav-pic{
+    width: 100px;
+    height: 30px;
+}
+#main-nav a{
+    color: #000;
+}
+/*main-nav 结束*/
+/*banner 开始*/
+#banner{
+    background: #b72637;
+}
+#banner .wrapper{
+    background: url("../tmall/banner1.jpg");
+    height: 500px;
+    position: relative;
+}
+#banner .banner-nav{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: .3;
+}
+#banner .banner-nav li{
+    width: 25px;
+    height: 5px;
+    background: #000;
+    opacity: .3%;
+    float: left;
+    margin-left: 5px;
+}
+#banner .banner-nav .selected{
+    background: #fff;
+}
+#banner .normal-nav{
+    width: 200px;
+    height: 536px;
+    background: rgba(0,0,0,.55);
+}
+#banner .normal-nav a{
+    color: #fff;
+    font-size: 14px;
+}
+#banner .normal-nav li{
+    color: #fff;
+    height: 36px;
+}
+#banner .normal-nav{
+    position: absolute;
+    left: -15px;
+    top: -36px;
+}
+#banner .normal-nav .catalogue{
+    background: #f00;
+}
+/*banner 结束*/
